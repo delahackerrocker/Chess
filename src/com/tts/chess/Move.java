@@ -9,7 +9,7 @@ public class Move
     private Piece pieceKilled;
     private boolean castlingMove = false;
 
-    private Move(Player player, Square squareStart, Square squareEnd)
+    public Move(Player player, Square squareStart, Square squareEnd)
     {
         this.player = player;
         this.squareStart = squareStart;

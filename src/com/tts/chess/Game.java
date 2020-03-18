@@ -1,16 +1,6 @@
 package com.tts.chess;
 import java.util.*;
 
-public enum GameStatus
-{
-    ACTIVE,
-    BLACK_WIN,
-    WHITE_WIN,
-    FORFEIT,
-    STALEMATE,
-    RESIGNATION
-}
-
 public class Game
 {
     private Player[] players;
@@ -89,10 +79,12 @@ public class Game
             move.setPieceKilled(destinationPiece);
         }
 
+        /*
         // is castling?
         if ( (sourcePiece != null) && (destinationPiece instanceof King) && (sourcePiece.isCastlingMove()) ) {
             move.isCastlingMove();
         }
+        */
 
         // store the move
         movesPlayed.add(move);
