@@ -15,7 +15,7 @@ public class Knight extends Piece
         {
             return false;
         }
-        
+
         int x = Math.abs(squareStart.getX() - squareEnd.getX());
         int y = Math.abs(squareStart.getY() - squareEnd.getY());
         return ((x * y) == 2);
