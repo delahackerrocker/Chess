@@ -5,9 +5,9 @@ public abstract class Piece
     private boolean killed = false;
     private boolean white = false;
 
-    public Piece (boolean white)
+    public Piece (boolean isWhite)
     {
-        this.white = !white;
+        this.white = isWhite;
     }
 
     public boolean isWhite()
